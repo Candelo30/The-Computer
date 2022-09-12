@@ -1,360 +1,74 @@
-/*
-
-* Se crean unos separadores para clasificar los selcetores de acurdo a su especifisida y valor.
-* Van por secciones header, footer... 
-* Se importa un link de google fount para la tipografia.
-* Esto es un enredo pero bueno... ¡¡vamos aprendiedo y mejorando!! 
-
-*/
-
-* {
-  box-sizing: border-box;
-}
-
-::selection {
-	background: white;
-}
-
-html {
-	scroll-behavior: smoth;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@700&display=swap');
 
 body {
-	margin: 0;
-	font-family: cursive;
-	background: #FFE3B3;	
-}
-
-img {
-	width: 30%;
-}
-
-header {
-	position: fixed;
-	z-index: 100;
-	top: 0;
-	left: 0;
-	right: 0;
-	background: #FFE3B3;
-	box-shadow: 10px 0px 10px rgba(0,0,0,.5);
-	transition: background .3s;
-	
-}
-
-acromym {
-	color: hsl(180 50% 50% /.50);
-	cursor: help;
-}
-
-strong {
-	color: #006BB9;
-}
-
-figcaption {
-    background-color: #222;
-    color: #fff;
-    font: italic smaller sans-serif;
-	margin: 10px;
-    padding: 3px;
-    text-align: center;
-}
-
-.content-menu {
-	margin: 20px 0;
-}
-
-	
-.content-menu li {
-	padding: 10px 0;
-	
-}
-
-.content-menu [href] {
-	text-decoration: none;
-	color: black;
-	line-height: 25px;
-}
-
-.index {
-	width: 100vw;
-	height: 100vh;
-}
-
-
-/* ...................................................... 10 ...................................................................*/
-
-.wrapper {
 	position: relative;
-	width: 100vw;
-	height: 100vh;
-	box-shadow: 5px 1px 10px rgba(0,0,0,.5);
-	background-color: #FFE3B3;
-	background-size: cover;
-	color: white;
-}
-
-.content-info {
-	position: absolute;
-	top: 45%;
-	width: 85vw;
-	padding: 0 16px;
-	color: black;
-}
-
-
-/* -------------------------- Header -------------------- */
-
-.navbar {
-	padding: .5rem 16px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.brand {
-	margin: 16px 0;	
-}
-
-.menu {
-	display: flex;
-	justify-content: space-around;
-	padding: 5px;
-	width: 50%;
-}
-
-.menu-icon,
-.menu-icon__close{
-	display: none;
-}
-
-.menu .menu__items-link-desactive {
-	color: hsl(180 0% 50% /.50);
-}
-
-
-
-/* ---------------------------Social -------------------- */
-
-.Social {
-	position: absolute;
-	right: 0;
-	bottom: 210px;	
-	text-align: center;
-	font-size: 1.5em;
-}
-
-.Social-content {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-
-.fa-brands	{
-	width: 45px;
-	padding: 5px;
-	cursor: pointer;
-	color: #000;
-}
-
-/* ------------------------- Main ---------------------*/
-
-.title{
-	font-family: 'Mochiy Pop One', sans-serif;
-	padding-top: 100px;
-	font-size:  24px;
-}
-
-.container {
-	width: 95%;
-	max-width: 957px; 
-	margin: 0 10%; 
-}
-
-.contenedor-img {
-	margin-top: 40px;
-	padding: 10px;
-	border: 3px solid #333;
-	box-shadow: 10px 10px 10px rgba(0,0,0,.2),
-				-10px -10px 10px rgba(0,0,0,.2);
-	text-align: center;
-}
-
-.tenor-gif-embed {
-	margin: 20px auto;
-}
-
-.content-menu {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	overflow: scroll;
-}
-
-/* --------------------------------------------------- */
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	margin-top: 20px;
-    width: 100vw;
-    height: 300px;
-	background: #FFE3B3;
-	box-shadow: -10px 0px 10px rgba(0,0,0,.5);
-}
-
-.sotial-networks {
-    display: flex;
-    justify-content: space-evenly;
-    width: 300px;
-    margin-top: 1em;
-}
-
-
-/* --------------------------------------------------- */
-
-.scroll {
-	z-index: 10;
-    position: fixed;
-    right: 15px;
-    bottom: 10px;
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    background-color: #219BE4;
-    text-indent: -9999px;
-    display: block;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    border-radius: 60px;
-}
-
-/* ...................................................... 11 ...................................................................*/
-
-.wrapper h1 {
-	color: #000;	
-	display: flex;
 	margin: 0;
 }
 
-.wrapper-1 h1 {
-	margin: 0;
-}
-
-
-.brand a {
-	display: flex;
-	font-family: 'Lobster', cursive;
-	font-size: .7em;
-	text-decoration: none;
-	color: #FFF;
-}
-
-.brand i {
-	color: #000;	
-	font-size: 1.5em;	
-}
-
-.menu li {
-	list-style: none;
-	padding-top: 5px;
-}
-
-.menu a{
-	padding: 10px;
-	text-decoration: none;
-	color: #000;
-}
-
-
-span .C {
-	color: red;
-}
-/* --------------------------------------------------- */
-
-.scroll span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -8px;
-    margin-top: -12px;
-    height: 0;
-    width: 0;
-    border: 8px solid transparent;
-    border-bottom-color: #333;
-}
-
-
-/* --------------------------------------------------- */
-
-/* --------------------------------------------------- */
-
-/* --------------------------------------------------- */
-
-.footer-content h2 {
-    font-size: 3em;
-}
-
-.footer-content h5 {
-    font-size: 1.5em;
-    text-align: center;
-}
-
-
-.sotial-networks i {
-    font-size: 1.5em;
-}
-
-
-/* --------------------------------------------------- */
-
-
-/* ...................................................... 20 ...................................................................*/
-
-
-/* Se crea una clase on para que siempre este activa */
-
-.menu .on{
-	color: #219BE4;
-}
-
-.brand .C {
-	color: #219BE4;
-}
-
-/* --------------------------------------------------- */
-
-/* --------------------------------------------------- */
-
-.fa-brands:hover {
-	color: #219BE4;
-}
-
-.sotial-networks:hover {
-	color: #219BE4;
-}
-
-/* ...................................................... 21 ...................................................................*/
-
-.content-menu [href]:hover {
-	border-bottom: 5px #219BE4 solid;
-	background-color: #219BE410;
-}
-
-
-.title::first-letter {
+h1 {
 	color: #006BB9;
 	font-size: 2em;
+	letter-spacing: .2em;
+}
+
+input {
+	display: block;
+	margin: 12.5px 0;
+	padding-bottom: 5px;
+	border-top: none;
+	border-bottom: 5px #30A0E0 solid;
+	border-left: none;
+	border-right: none;
+	width: 100%;
+	background-color: #FFC973;
+	color: #000;
+	cursor: pointer;
+}
+
+label {
+	font-size: 1.2em;	
+}
+
+button {
+	padding: 10px;
+	margin: 10px;
+	width: 100%;	
+	border: groove 5px #30A0E0;
+	background-color: #FFC973;
+	font-size: 1.2em;
+	font-family: 'Bebas Neue', cursive;
 }
 
 
-.menu a:hover {
-	border-bottom: 5px #219BE4 solid;
-	background-color: #219BE412;
-}
 
-.scroll:hover {
-    background-color: #006BB9;
-    opacity:1;filter:"alpha(opacity=100)";
-    -ms-filter:"alpha(opacity=100)";
+.section-1 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 30%;
+	height: 100vh;
+
+	text-align: center;
+	background-image: url('https://images.unsplash.com/photo-1660322167244-96923d0c7c02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80');
+}
+.section-2 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 70%;
+	height: 100vh;
+	
+	background-color: #FFE3B3;
+	color: black;
+	font-family: 'Bebas Neue', cursive;
+} 
+
+
+.container__form {
+	display: flex;
+	flex-direction: column;
 }
